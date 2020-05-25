@@ -1,0 +1,28 @@
+{
+  "name": "hamburgos",
+  "version": "1.0.0",
+  "description": "Server for Android App learning purposes",
+  "main": "start.js",
+  "dependencies": {
+    "express": "expressjs/express"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/danyschwab/hamburgo-server.git"
+  },
+  "keywords": [
+    "android",
+    "nodejs",
+    "learning"
+  ],
+  "author": "Daniela Schwab",
+  "license": "GPL-3.0",
+  "bugs": {
+    "url": "https://github.com/danyschwab/hamburgo-server/issues"
+  },
+  "homepage": "https://github.com/danyschwab/hamburgo-server#readme"
+}
