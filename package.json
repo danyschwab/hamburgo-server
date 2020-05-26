@@ -4,11 +4,14 @@
   "description": "Server for Android App learning purposes",
   "main": "start.js",
   "dependencies": {
-    "express": "expressjs/express"
+    "express": "expressjs/express",
+    "morgan": "^1.10.0",
+    "nodemon": "^2.0.4"
   },
   "devDependencies": {},
   "scripts": {
-    "start": "node start.js",
+    "dev": "nodemon src/start.js",
+    "start": "node src/start.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {

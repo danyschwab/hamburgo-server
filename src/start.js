@@ -1,13 +1,13 @@
-const express = require('express')
-const data = require('./data.js')
+require('dotenv').config();
 
-const dotenv = require('dotenv');
-dotenv.config();
+const express = require('express')
+const morgan = require('morgan')
+const data = require('./data.js')
 
 const app = express();
 app.use(express.json());
+app.use(morgan('dev'));
 
-const hostname = process.env.HOST;
 const port = process.env.PORT;
 
 app.get('/api/v1/', (req, res) => {
@@ -15,4 +15,4 @@ app.get('/api/v1/', (req, res) => {
 	res.send(aux);
 });
 
-app.listen(port, hostname, function() {console.log(`App listening on port ${port}!`)})
+app.listen(port, function() {console.log(`App listening on port ${port}!`)})
