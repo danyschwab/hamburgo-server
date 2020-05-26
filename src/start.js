@@ -8,7 +8,7 @@ const app = express();
 app.use(express.json());
 app.use(morgan('dev'));
 
-const port = process.env.PORT;
+const port = process.env.PORT || 3000;
 
 app.get('/api/v1/', (req, res) => {
 	var aux = data.getAll()
